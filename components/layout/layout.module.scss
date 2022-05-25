@@ -1,3 +1,13 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
 .main {
-  // flex-grow: 1;
+  background-color: red;
+  // height: 50vh;
+  // flex: 1;
 }
