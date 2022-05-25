@@ -15,6 +15,7 @@ function Footer() {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a> */}
+        <img src="/earth.jpg" alt="Earth" className={styles.img}/>
         <p>FOOTER</p>
       </div>
     </footer>
