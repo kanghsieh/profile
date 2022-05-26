@@ -22,7 +22,7 @@ function Footer() {
           layout="fill"
           width="100%"
           height="20%"
-           />
+        />
       </div>
     </footer>
   )

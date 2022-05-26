@@ -70,6 +70,7 @@ function AboutMe() {
             <i className="devicon-apple-original"></i>
             <i className="devicon-matlab-plain"></i>
             <i className="devicon-latex-original"></i>
+            {/* Tableau Icon */}
           </div>
         </div>
       </div>

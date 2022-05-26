@@ -9,12 +9,14 @@ $background: rgba($color: white, $alpha: 0.5);
 .bio {
   display: flex;
   justify-content: center;
+  text-align: left;
 
   .profile {
     width: 40%;
     margin-right: 10px;
     background: $background;
     border-radius: 8px;
+    padding: 1rem;
   }
 
   .cv {
