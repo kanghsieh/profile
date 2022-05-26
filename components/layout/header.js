@@ -6,6 +6,18 @@ function Header() {
     <header>
       <nav>
         <ul className={styles.list}>
+        <li>
+            <Link href="/">
+              <a>
+                <div className={styles.navitem}>
+                  <div className={styles.navtext}>
+                    Home
+                  </div>
+                  <img src="/home.svg" alt="Home" />
+                </div>
+              </a>
+            </Link>
+          </li>
           <li>
             <Link href="/about-me">
               <a>
