@@ -9,3 +9,22 @@ nav {
   }
 
 }
+
+.navitem {
+  position: relative;
+  text-align: center;
+
+  img {
+    height: 15vh;
+    width: auto;
+  }
+
+  .navtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+}

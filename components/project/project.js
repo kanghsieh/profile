@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "./project.module.scss";
 
 function Project(props) {
-  const { title, img, url, description } = props;
+  const { title, img, url, description, skills } = props;
   return (
     <Link href={url}>
       <a target="_blank" rel="noreferrer">
@@ -21,6 +21,13 @@ function Project(props) {
           <div className={styles.description}>
             <h2>{title}</h2>
             <p>{description}</p>
+            <ul>
+              {skills.map(skill => {
+                return (
+                  <div key={skill}>{skill}</div>
+                )
+              })}
+            </ul>
           </div>
         </div>
       </a>
