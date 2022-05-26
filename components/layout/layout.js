@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Footer from './footer';
 import Header from './header';
-import { Fragment } from "react"
+import { Fragment } from "react";
+import Image from 'next/image';
 import styles from './layout.module.scss';
 
 function Layout(props) {
@@ -15,6 +16,15 @@ function Layout(props) {
       </Head>
       <Header />
       <main className={styles.main}>{props.children}</main>
+      {/* <div className={styles.img}>
+        <Image
+            src="/earth.jpg"
+            alt="Earth"
+            layout="fill"
+            width="100%"
+            height="20%"
+          />
+      </div> */}
       <Footer />
     </div>
   )

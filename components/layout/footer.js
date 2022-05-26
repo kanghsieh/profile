@@ -5,24 +5,16 @@ function Footer() {
   return (
     <footer>
       <div className={styles.footer}>
-        {/* <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a> */}
-        <Image
+        <p>Made with <i className="devicon-nextjs-original"></i>  |  © 2022 Kang Hsieh</p>
+
+        {/* <Image
           src="/earth.jpg"
           alt="Earth"
           className={styles.img}
           layout="fill"
           width="100%"
           height="20%"
-        />
+        /> */}
       </div>
     </footer>
   )
