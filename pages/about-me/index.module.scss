@@ -1,0 +1,47 @@
+$background: rgba($color: white, $alpha: 0.5);
+
+.bio {
+  display: flex;
+  justify-content: center;
+
+  .profile {
+    width: 40%;
+    margin-right: 10px;
+    background: $background;
+    border-radius: 8px;
+  }
+
+  .cv {
+    margin-left: 10px;
+    background: $background;
+    border-radius: 8px;
+  }
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, 200px);
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+
+  div {
+    background: $background;
+    border-radius: 8px;
+  }
+
+  .skillsCard {
+    background: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    // grid-template-columns: 1fr 1fr 1fr;
+    // grid-gap: 1rem;
+  }
+
+  i {
+    font-size: 50px;
+    margin: 10px;
+    // letter-spacing: 30px;
+  }
+}
