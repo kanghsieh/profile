@@ -1,5 +1,11 @@
 $background: rgba($color: white, $alpha: 0.5);
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .bio {
   display: flex;
   justify-content: center;
@@ -19,16 +25,16 @@ $background: rgba($color: white, $alpha: 0.5);
 }
 
 .skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: repeat(auto-fit, 200px);
-  grid-gap: 1rem;
-  grid-auto-flow: dense;
+  align-self: center;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  // grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  // grid-gap: 1rem;
+  // grid-auto-flow: dense;
 
-  div {
-    background: $background;
-    border-radius: 8px;
-  }
 
   .skillsCard {
     background: none;
@@ -44,4 +50,12 @@ $background: rgba($color: white, $alpha: 0.5);
     margin: 10px;
     // letter-spacing: 30px;
   }
+}
+
+.skills > div {
+  background: $background;
+  border-radius: 8px;
+  margin: 0.5rem;
+  width: 25vh ;
+  min-height: 10vh;
 }
