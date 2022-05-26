@@ -14,7 +14,7 @@ function AboutMe() {
           <h2>Download CV</h2>
         </div>
       </div>
-      <h2>Skills</h2>
+      <h1>Skills</h1>
       <div className={styles.skills}>
         <div>
           <h3>Programming Languages</h3>
