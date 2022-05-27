@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from './header.module.scss';
 
 function Header() {
@@ -13,7 +14,12 @@ function Header() {
                   <div className={styles.navtext}>
                     Home
                   </div>
-                  <img src="/home.svg" alt="Home" />
+                  {/* <img src="/home.svg" alt="Home" /> */}
+                  <Image
+                    src="/home.svg"
+                    alt="Home"
+                    height={100}
+                    width={100} />
                 </div>
               </a>
             </Link>
@@ -25,7 +31,11 @@ function Header() {
                   <div className={styles.navtext}>
                     About Me
                   </div>
-                  <img src="/mars.svg" alt="About Me" />
+                  <Image
+                    src="/mars.svg"
+                    alt="About Me"
+                    height={100}
+                    width={100} />
                 </div>
               </a>
             </Link>
@@ -37,7 +47,11 @@ function Header() {
                   <div className={styles.navtext}>
                     My Projects
                   </div>
-                  <img src="/jupiter.svg" alt="About Me" />
+                  <Image
+                    src="/jupiter.svg"
+                    alt="My Projects"
+                    height={100}
+                    width={100} />
                 </div>
               </a>
             </Link>
@@ -49,7 +63,11 @@ function Header() {
                   <div className={styles.navtext}>
                     Contact Me
                   </div>
-                  <img src="/moon.svg" alt="About Me" />
+                  <Image
+                    src="/moon.svg"
+                    alt="Contact Me"
+                    height={100}
+                    width={100} />
                 </div>
               </a>
             </Link>
