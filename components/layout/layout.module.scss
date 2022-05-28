@@ -12,6 +12,9 @@
   height: 70vh;
   padding: 0;
   scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 // .img {
