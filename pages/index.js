@@ -27,7 +27,6 @@ export default function Home() {
         <h1 className={styles.title} ref={homeRef}>
           Hi, my name is Kang. I am a software engineer with a background in aerospace engineering. 🚀✈️
         </h1>
-        {/* <button onClick={handleNavClick}>Contact Me</button> */}
       </div>
       <AboutMe ref={aboutRef} />
       <Projects ref={projectsRef} />

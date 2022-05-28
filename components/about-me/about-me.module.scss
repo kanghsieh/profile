@@ -11,6 +11,7 @@ $background: rgba($color: white, $alpha: 0.5);
   display: flex;
   justify-content: center;
   text-align: left;
+  flex-wrap: wrap;
 
   .profile {
     width: 40%;
