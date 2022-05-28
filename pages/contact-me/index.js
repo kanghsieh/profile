@@ -1,5 +1,5 @@
 import styles from './index.module.scss';
-import { forwardRef, useRef } from 'react'
+import { forwardRef } from 'react';
 
 const ContactMe = forwardRef((props, ref) => {
   return (

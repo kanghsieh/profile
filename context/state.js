@@ -1,12 +1,15 @@
-import { createContext, useContext } from "react";
+import { useState, createContext, useContext } from "react";
 
-const NavContext = createContext();
+const NavContext = createContext({
+  navRef: {},
+  setNavRef: (ref) => {},
+});
 
 export function NavPointer(props) {
-  let sharedNavState = { currentLocation };
+  const [navRef, setNavRef] = useState({});
 
   return (
-    <NavContext.Provider value={sharedNavState}>
+    <NavContext.Provider value={{navRef, setNavRef}}>
       {props.children}
     </NavContext.Provider>
   );

@@ -1,8 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from './header.module.scss';
+import { useNavContext } from "../../context/state";
 
 function Header() {
+  const allRefs = useNavContext();
+
+  const handleNavClick = () => {
+    console.log(allRefs.navRef.projectsRef);
+    // navRef.current.scrollIntoView({ behavior: 'smooth' });
+  }
   return (
     <header>
       <nav>
@@ -56,6 +63,7 @@ function Header() {
               </a>
             </Link>
           </li>
+          <button onClick={handleNavClick}>Contact Me</button>
           <li>
             <Link href="/contact-me">
               <a>
