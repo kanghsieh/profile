@@ -1,20 +1,9 @@
-import styles from './index.module.scss';
+import styles from './about-me.module.scss';
 import { forwardRef } from 'react';
 
 const AboutMe = forwardRef((props, ref) => {
   return (
-    <div className={styles.container}>
-      <h1>Kang Hsieh</h1>
-      <div className={styles.bio}>
-        <div className={styles.profile} ref={ref}>
-          <h2>About Me</h2>
-          <p>Combined experience and knowledge in both aerospace engineering and software development. Having over 6 years of proven track record of successfully managed projects in technical operations of aerospace industry.</p>
-          <p>Recent graduate of a software development coding bootcamp. Data-driven, structured and pragmatic approach to problem solving.</p>
-        </div>
-        <div className={styles.cv}>
-          <h2>Download CV</h2>
-        </div>
-      </div>
+    <div className={styles.container} ref={ref}>
       <h1>Skills</h1>
       <div className={styles.skills}>
         <div>
@@ -73,6 +62,17 @@ const AboutMe = forwardRef((props, ref) => {
             <i className="devicon-latex-original"></i>
             {/* Tableau Icon */}
           </div>
+        </div>
+      </div>
+      <h1>Kang Hsieh</h1>
+      <div className={styles.bio}>
+        <div className={styles.profile}>
+          <h2>About Me</h2>
+          <p>Combined experience and knowledge in both aerospace engineering and software development. Having over 6 years of proven track record of successfully managed projects in technical operations of aerospace industry.</p>
+          <p>Recent graduate of a software development coding bootcamp. Data-driven, structured and pragmatic approach to problem solving.</p>
+        </div>
+        <div className={styles.cv}>
+          <h2>Download CV</h2>
         </div>
       </div>
     </div>

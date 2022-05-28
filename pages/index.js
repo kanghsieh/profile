@@ -1,8 +1,8 @@
 import styles from '../styles/Home.module.scss';
 import { Fragment } from 'react';
-import AboutMe from './about-me';
-import Projects from './projects';
-import ContactMe from './contact-me';
+import AboutMe from '../components/about-me/about-me';
+import Projects from '../components/project/projects';
+import ContactMe from '../components/contact/contact-me';
 import { useRef, useEffect } from 'react';
 import { useNavContext } from '../context/state';
 
@@ -27,7 +27,6 @@ export default function Home() {
         <h1 className={styles.title} ref={homeRef}>
           Hi, my name is Kang. I am a software engineer with a background in aerospace engineering. 🚀✈️
         </h1>
-        {/* <button onClick={handleNavClick}>Contact Me</button> */}
       </div>
       <AboutMe ref={aboutRef} />
       <Projects ref={projectsRef} />
