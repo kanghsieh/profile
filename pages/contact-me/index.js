@@ -10,13 +10,4 @@ const ContactMe = forwardRef((props, ref) => {
 });
 ContactMe.displayName = "ContactMe";
 
-// function ContactMe() {
-
-//   return (
-//     <div className={styles.container}>
-//       <h1>Contact Me</h1>
-//     </div>
-//   )
-// }
-
 export default ContactMe;

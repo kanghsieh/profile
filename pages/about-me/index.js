@@ -1,11 +1,12 @@
 import styles from './index.module.scss';
+import { forwardRef } from 'react';
 
-function AboutMe() {
+const AboutMe = forwardRef((props, ref) => {
   return (
     <div className={styles.container}>
       <h1>Kang Hsieh</h1>
       <div className={styles.bio}>
-        <div className={styles.profile}>
+        <div className={styles.profile} ref={ref}>
           <h2>About Me</h2>
           <p>Combined experience and knowledge in both aerospace engineering and software development. Having over 6 years of proven track record of successfully managed projects in technical operations of aerospace industry.</p>
           <p>Recent graduate of a software development coding bootcamp. Data-driven, structured and pragmatic approach to problem solving.</p>
@@ -76,6 +77,7 @@ function AboutMe() {
       </div>
     </div>
   )
-}
+});
+AboutMe.displayName = "AboutMe";
 
 export default AboutMe;

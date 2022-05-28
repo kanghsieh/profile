@@ -9,12 +9,14 @@ import { useNavContext } from '../context/state';
 // export const NavContext = createContext();
 
 export default function Home() {
+  const homeRef = useRef();
+  const aboutRef = useRef();
   const contactRef = useRef();
   const projectsRef = useRef();
-  const allRefs = {projectsRef, contactRef};
-  const { setNavRef } = useNavContext();
+  const allRefs = {homeRef, aboutRef, projectsRef, contactRef};
+  const { navRef, setNavRef } = useNavContext();
   useEffect(() => {
-    if (Object.keys(allRefs).length === 0) {
+    if (Object.entries(navRef).length === 0) {
       setNavRef(allRefs);
     }
   });
@@ -22,12 +24,12 @@ export default function Home() {
   return (
     <Fragment>
       <div className={styles.container}>
-        <h1 className={styles.title}>
+        <h1 className={styles.title} ref={homeRef}>
           Hi, my name is Kang. I am a software engineer with a background in aerospace engineering. 🚀✈️
         </h1>
         {/* <button onClick={handleNavClick}>Contact Me</button> */}
       </div>
-      <AboutMe />
+      <AboutMe ref={aboutRef} />
       <Projects ref={projectsRef} />
       <ContactMe ref={contactRef} />
     </Fragment>
