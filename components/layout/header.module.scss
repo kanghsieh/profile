@@ -12,15 +12,16 @@ nav {
 .navitem {
   position: relative;
   text-align: center;
+  transition: transform .2s;
 
   img {
-    height: 15vh;
-    width: auto;
+    opacity: 0.7;
   }
 
   .navtext {
-    fill-opacity: 0.2;
-    opacity: 1.5;
+    // fill-opacity: 0.2;
+    // opacity: 1.5;
+    z-index: 2;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,5 +29,17 @@ nav {
     color: white;
     text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
     font-weight: bold;
+  }
+}
+
+.navitem:hover {
+  transform: scale(1.1);
+
+  img {
+    opacity: 1;
+  }
+
+  .navtext {
+    font-size: large;
   }
 }

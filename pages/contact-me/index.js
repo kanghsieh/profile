@@ -1,11 +1,13 @@
 import styles from './index.module.scss';
+import { forwardRef } from 'react';
 
-function ContactMe() {
+const ContactMe = forwardRef((props, ref) => {
   return (
     <div className={styles.container}>
-      <h1>Contact Me</h1>
+      <h1 ref={ref}>Contact Me</h1>
     </div>
   )
-}
+});
+ContactMe.displayName = "ContactMe";
 
 export default ContactMe;
