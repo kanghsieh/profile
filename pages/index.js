@@ -1,8 +1,8 @@
 import styles from '../styles/Home.module.scss';
 import { Fragment } from 'react';
-import AboutMe from './about-me';
+import AboutMe from '../components/about-me/about-me';
 import Projects from '../components/project/projects';
-import ContactMe from './contact-me';
+import ContactMe from '../components/contact/contact-me';
 import { useRef, useEffect } from 'react';
 import { useNavContext } from '../context/state';
 
