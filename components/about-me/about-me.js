@@ -3,8 +3,8 @@ import { forwardRef } from 'react';
 
 const AboutMe = forwardRef((props, ref) => {
   return (
-    <div className={styles.container} ref={ref}>
-      <h1>Skills</h1>
+    <div className={styles.container} ref={ref} id={"about"}>
+      <h1 >Skills</h1>
       <div className={styles.skills}>
         <div>
           <h3>Programming Languages</h3>

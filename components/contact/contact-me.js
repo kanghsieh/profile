@@ -3,8 +3,8 @@ import { forwardRef } from 'react';
 
 const ContactMe = forwardRef((props, ref) => {
   return (
-    <div className={styles.container}>
-      <h1 ref={ref}>Contact Me</h1>
+    <div className={styles.container} ref={ref} id={"contact"}>
+      <h1 >Contact Me</h1>
       <div className={styles.form}>
         <form action="" method="post">
           <label htmlFor="first">First name:</label>
