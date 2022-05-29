@@ -43,3 +43,16 @@ nav {
     font-size: large;
   }
 }
+
+.navitemScrolled {
+  transform: scale(1.1);
+  // background-color: red;
+
+  img {
+    opacity: 1;
+  }
+
+  .navtext {
+    font-size: large;
+  }
+}

@@ -4,8 +4,8 @@ import { forwardRef } from 'react';
 
 const Projects = forwardRef((props, ref) => {
   return (
-    <div className={styles.container}>
-      <h1 ref={ref}>My Projects</h1>
+    <div className={styles.container} ref={ref} id={"projects"}>
+      <h1 >My Projects</h1>
       <div className={styles.projects}>
         <ProjectItem
           title={"GymAlly"}
