@@ -1,9 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 import styles from "./project.module.scss";
 
-function Project(props) {
+function ProjectItem(props) {
   const { title, img, url, description, skills } = props;
+  console.log(skills);
   return (
     <Link href={url}>
       <a target="_blank" rel="noreferrer">
@@ -21,13 +21,14 @@ function Project(props) {
           <div className={styles.description}>
             <h2>{title}</h2>
             <p>{description}</p>
-            <ul>
+            <h3>Applied tech stack:</h3>
+            <div className={styles.skillsCard}>
               {skills.map(skill => {
                 return (
-                  <div key={skill}>{skill}</div>
+                  <i key={skill} className={skill}></i>
                 )
               })}
-            </ul>
+            </div>
           </div>
         </div>
       </a>
@@ -35,4 +36,4 @@ function Project(props) {
   )
 }
 
-export default Project;
+export default ProjectItem;

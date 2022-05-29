@@ -1,8 +1,10 @@
 import ProjectItem from './project-item';
 import styles from './projects.module.scss';
 import { forwardRef } from 'react';
+import devIcons from '../../devicons';
 
 const Projects = forwardRef((props, ref) => {
+  const icons = devIcons;
   return (
     <div className={styles.container} ref={ref} id={"projects"}>
       <h1 >My Projects</h1>
@@ -11,15 +13,15 @@ const Projects = forwardRef((props, ref) => {
           title={"GymAlly"}
           img={"/gymally_screenshot.png"}
           url={"http://www.gymally.fitness/"}
-          description={"Here is the description"}
-          skills={["Ruby", "JS"]}
+          description={"This was the final project of the Le Wagon Web Dev Bootcamp developed by me with three other students. It is showcasing the knowledge and skills obtained during this 10-week full-time coding bootcamp and was developed in just two weeks resulting in successfully demonstrating the MVP."}
+          skills={[icons.ruby, icons.js, icons.rails, icons.postgresql, icons.github, icons.heroku]}
         />
         <ProjectItem
           title={"Help Local"}
           img={"/helplocal_screenshot.png"}
           url={"https://new-in-germany.vercel.app/"}
-          description={"Here is the description"}
-          skills={["JS", "Next.js", "MongoDB"]}
+          description={"A full stack web application to connect refugees in need with volunteers for humanitarian aid, developed together with four other developers."}
+          skills={[icons.nextjs, icons.react, icons.mongodb, icons.js]}
         />
       </div>
     </div>
