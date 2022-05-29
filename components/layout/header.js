@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from './header.module.scss';
-import { useNavContext } from "../../context/state";
+import { useNavContext } from "../../context/ref-state";
 
 function Header() {
   const allRefs = useNavContext();
