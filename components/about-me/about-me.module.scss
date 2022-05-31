@@ -1,4 +1,4 @@
-$background: rgba($color: white, $alpha: 0.5);
+@import 'styles/variables';
 
 .container {
   display: flex;
@@ -18,14 +18,14 @@ $background: rgba($color: white, $alpha: 0.5);
   .profile {
     max-width: 70vh;
     margin: 10px;
-    background: $background;
+    background: $card-background;
     border-radius: 8px;
     padding: 1rem;
   }
 
   .cv {
     margin: 10px;
-    background: $background;
+    background: $card-background;
     border-radius: 8px;
     padding: 1rem;
     display: flex;
@@ -56,7 +56,7 @@ $background: rgba($color: white, $alpha: 0.5);
 }
 
 .skills > div {
-  background: $background;
+  background: $card-background;
   border-radius: 8px;
   margin: 0.5rem;
   width: 25vh ;
