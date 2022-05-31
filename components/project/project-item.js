@@ -3,7 +3,6 @@ import styles from "./project.module.scss";
 
 function ProjectItem(props) {
   const { title, img, url, description, skills } = props;
-  console.log(skills);
   return (
     <Link href={url}>
       <a target="_blank" rel="noreferrer">

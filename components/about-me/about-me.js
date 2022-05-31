@@ -1,4 +1,5 @@
 import styles from './about-me.module.scss';
+import Image from 'next/image';
 import { forwardRef } from 'react';
 
 const AboutMe = forwardRef((props, ref) => {
@@ -72,7 +73,10 @@ const AboutMe = forwardRef((props, ref) => {
           <p>Recent graduate of a software development coding bootcamp. Data-driven, structured and pragmatic approach to problem solving.</p>
         </div>
         <div className={styles.cv}>
-          <h2>Download CV</h2>
+          <a href="KangHsieh_CV_2022.pdf" target="_blank">
+            <h2>Download CV</h2>
+            <Image layout={"responsive"} height={1.4} width={1} src={"/cv_preview.png"} alt={"CV preview photo"}/>
+          </a>
         </div>
       </div>
     </div>
