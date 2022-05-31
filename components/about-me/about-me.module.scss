@@ -40,10 +40,6 @@ $background: rgba($color: white, $alpha: 0.5);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  // grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-  // grid-gap: 1rem;
-  // grid-auto-flow: dense;
 
 
   .skillsCard {
@@ -51,14 +47,11 @@ $background: rgba($color: white, $alpha: 0.5);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    // grid-template-columns: 1fr 1fr 1fr;
-    // grid-gap: 1rem;
   }
 
   i {
     font-size: 50px;
     margin: 10px;
-    // letter-spacing: 30px;
   }
 }
 

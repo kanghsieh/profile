@@ -14,7 +14,7 @@ const Projects = forwardRef((props, ref) => {
           img={"/gymally_screenshot.png"}
           url={"http://www.gymally.fitness/"}
           description={"This was the final project of the Le Wagon Web Dev Bootcamp developed by me with three other students. It is showcasing the knowledge and skills obtained during this 10-week full-time coding bootcamp and was developed in just two weeks resulting in successfully demonstrating the MVP."}
-          skills={[icons.ruby, icons.js, icons.rails, icons.postgresql, icons.github, icons.heroku]}
+          skills={[icons.ruby, icons.js, icons.rails, icons.postgresql]}
         />
         <ProjectItem
           title={"Help Local"}
