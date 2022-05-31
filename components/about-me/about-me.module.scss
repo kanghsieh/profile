@@ -1,4 +1,4 @@
-$background: rgba($color: white, $alpha: 0.5);
+@import 'styles/variables';
 
 .container {
   display: flex;
@@ -11,21 +11,26 @@ $background: rgba($color: white, $alpha: 0.5);
   display: flex;
   justify-content: center;
   text-align: left;
+  align-self: center;
   flex-wrap: wrap;
+  width: 80%;
 
   .profile {
-    width: 40%;
-    margin-right: 10px;
-    background: $background;
+    max-width: 70vh;
+    margin: 10px;
+    background: $card-background;
     border-radius: 8px;
     padding: 1rem;
   }
 
   .cv {
-    margin-left: 10px;
-    background: $background;
+    margin: 10px;
+    background: $card-background;
     border-radius: 8px;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -35,10 +40,6 @@ $background: rgba($color: white, $alpha: 0.5);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  // grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-  // grid-gap: 1rem;
-  // grid-auto-flow: dense;
 
 
   .skillsCard {
@@ -46,19 +47,16 @@ $background: rgba($color: white, $alpha: 0.5);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    // grid-template-columns: 1fr 1fr 1fr;
-    // grid-gap: 1rem;
   }
 
   i {
     font-size: 50px;
     margin: 10px;
-    // letter-spacing: 30px;
   }
 }
 
 .skills > div {
-  background: $background;
+  background: $card-background;
   border-radius: 8px;
   margin: 0.5rem;
   width: 25vh ;
