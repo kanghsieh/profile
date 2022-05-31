@@ -37,6 +37,8 @@ function Header() {
             <Image
               src="/home.svg"
               alt="Home"
+              quality={10}
+              priority={true}
               height={100}
               width={100} />
           </div>
