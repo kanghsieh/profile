@@ -11,18 +11,20 @@ $background: rgba($color: white, $alpha: 0.5);
   display: flex;
   justify-content: center;
   text-align: left;
+  align-self: center;
   flex-wrap: wrap;
+  width: 80%;
 
   .profile {
-    width: 40%;
-    margin-right: 10px;
+    max-width: 70vh;
+    margin: 10px;
     background: $background;
     border-radius: 8px;
     padding: 1rem;
   }
 
   .cv {
-    margin-left: 10px;
+    margin: 10px;
     background: $background;
     border-radius: 8px;
     padding: 1rem;
