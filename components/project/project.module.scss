@@ -20,6 +20,22 @@
   .description {
     max-width: 45vh;
   }
+
+  a {
+    padding: 8px;
+    margin-right: 3em;
+    width: 100%;
+    color: white;
+    background: black;
+    border-radius: 8px;
+    border: none;
+    transition: background 0.3s ease;
+  }
+
+  a:hover {
+    color: white;
+    background: rgb(83, 82, 82);
+  }
 }
 
 .image {
