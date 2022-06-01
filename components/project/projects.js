@@ -15,6 +15,7 @@ const Projects = forwardRef((props, ref) => {
           url={"http://www.gymally.fitness/"}
           description={"This was the final project of the Le Wagon Web Dev Bootcamp developed by three students and me. It is showcasing the knowledge and skills obtained during this 10-week full-time coding bootcamp and was developed in just two weeks resulting in successfully demonstrating the MVP."}
           skills={[icons.ruby, icons.js, icons.rails, icons.postgresql]}
+          repo={"https://github.com/if-stella/GymAlly"}
         />
         <ProjectItem
           title={"Help Local"}
@@ -22,6 +23,7 @@ const Projects = forwardRef((props, ref) => {
           url={"https://new-in-germany.vercel.app/"}
           description={"A full stack web application to connect refugees in need with volunteers for humanitarian aid, developed together with four other developers."}
           skills={[icons.nextjs, icons.react, icons.mongodb, icons.js]}
+          repo={"https://github.com/gastighost/help-local"}
         />
       </div>
     </div>
