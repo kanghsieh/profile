@@ -8,7 +8,7 @@ import { useRef, useEffect } from 'react';
 import { useNavContext } from '../context/ref-state';
 import { useScrollContext } from '../context/scroll-state';
 
-export default function Home() {
+export default function Home(props) {
   const homeRef = useRef();
   const aboutRef = useRef();
   const contactRef = useRef();
@@ -47,7 +47,20 @@ export default function Home() {
       <HomeTitle ref={homeRef}/>
       <AboutMe ref={aboutRef} />
       <Projects ref={projectsRef} />
-      <ContactMe ref={contactRef} />
+      <ContactMe ref={contactRef}
+        serviceId={props.service_id}
+        templateId={props.template_id}
+        publicKey={props.public_key} />
     </Fragment>
   )
+}
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      service_id: process.env.NEXT_PUBLIC_SERVICE_ID,
+      template_id: process.env.NEXT_PUBLIC_TEMPLATE_ID,
+      public_key: process.env.NEXT_PUBLIC_PUBLIC_KEY,
+    }
+  }
 }
