@@ -3,6 +3,7 @@ import { forwardRef, useState } from 'react';
 import { send } from 'emailjs-com';
 
 const ContactMe = forwardRef((props, ref) => {
+  const { serviceId, templateId, publicKey } = props;
   const [toSend, setToSend] = useState({
     first: '',
     last: '',
@@ -14,10 +15,10 @@ const ContactMe = forwardRef((props, ref) => {
     e.preventDefault();
     {/* --- METHOD TO SEND THE MAIL --- */}
     send(
-      'service_azcleon',
-      'template_ujtbhr7',
+      serviceId,
+      templateId,
       toSend,
-      'RQNn4ziDe513qTeEX'
+      publicKey,
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
