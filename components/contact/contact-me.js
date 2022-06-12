@@ -22,9 +22,11 @@ const ContactMe = forwardRef((props, ref) => {
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
+        alert("Message has been sent out successfully.");
       })
       .catch((err) => {
         console.log('FAILED...', err);
+        alert("Sending message failed.");
       });
   };
 
