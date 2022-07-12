@@ -35,7 +35,7 @@ function Header() {
             </div>
             {/* <img src="/home.svg" alt="Home" /> */}
             <Image
-              src="/home.svg"
+              src="/home.png"
               alt="Home"
               quality={10}
               priority={true}
@@ -49,7 +49,7 @@ function Header() {
                 About Me
               </div>
               <Image
-                src="/mars.svg"
+                src="/mars.png"
                 alt="About Me"
                 height={100}
                 width={100} />
@@ -61,7 +61,7 @@ function Header() {
                 My Projects
               </div>
               <Image
-                src="/jupiter.svg"
+                src="/jupiter.png"
                 alt="My Projects"
                 height={100}
                 width={100} />
@@ -73,7 +73,7 @@ function Header() {
                 Contact Me
               </div>
               <Image
-                src="/moon.svg"
+                src="/moon.png"
                 alt="Contact Me"
                 height={100}
                 width={100} />
