@@ -72,12 +72,12 @@ const AboutMe = forwardRef((props, ref) => {
           <p>Combined experience and knowledge in both aerospace engineering and software development. Having over 6 years of proven track record of successfully managed projects in technical operations of aerospace industry.</p>
           <p>Recent graduate of a software development coding bootcamp. Data-driven, structured and pragmatic approach to problem solving.</p>
         </div>
-        <div className={styles.cv}>
+        {/* <div className={styles.cv}>
           <a href="KangHsieh_CV_2022.pdf" target="_blank">
             <h2>Download CV</h2>
             <Image layout={"responsive"} height={1.4} width={1} src={"/cv_preview.png"} alt={"CV preview photo"}/>
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   )
